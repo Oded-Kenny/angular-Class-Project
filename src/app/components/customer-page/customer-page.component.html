@@ -1,0 +1,32 @@
+<pre>
+  searchFirst: {{searchFirst}}
+    <br>
+    searchLast: {{searchLast}}
+    <br>
+    searchPhone: {{searchPhone}}
+  </pre>
+  
+  <div class="div-filter">
+    <input
+    [(ngModel)]="searchFirst"
+    class="input-filter"
+    type="text"
+    placeholder="First Name"
+  />
+    <input
+    [(ngModel)]="searchLast"
+    class="input-filter"
+    type="text"
+    placeholder="Last Name"
+  />
+    <input
+    [(ngModel)]="searchPhone"
+    class="input-filter"
+    type="text"
+    placeholder="Phone Name"
+  />
+    <button class="btn btn-success" (click)="addCustomer()">
+    Add customer
+  </button>
+  </div>
+  
